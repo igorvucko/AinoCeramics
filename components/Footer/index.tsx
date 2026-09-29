@@ -6,14 +6,14 @@ export default function Footer() {
   return (
     <footer className="relative bg-ink text-ivory overflow-hidden">
       {/* Optional background texture */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <img
-          src="/footer-texture.jpg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/90 to-ink/70" />
-      </div>
+    <div className="absolute inset-0 pointer-events-none">
+  <img
+    src="/footer.png"
+    alt=""
+    className="w-full h-full object-cover opacity-40"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/40" />
+</div>
 
       {/* Content */}
       <div className="relative">
