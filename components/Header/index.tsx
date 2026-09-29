@@ -49,6 +49,9 @@ export default function Header() {
           <Link href="/contact" className="hover:opacity-60 transition">
             Contact
           </Link>
+          <Link href="/for-designers" className="hover:opacity-60 transition">
+  For Designers
+</Link>
         </nav>
 
         <div
