@@ -1,5 +1,5 @@
-import { shopifyFetch } from "@/services/shopify_client"
-import type { ShopifyProductEdge, ShopifyProduct } from "@/types/shopify"
+import { shopifyFetch } from "@/services/shopify_client/page"
+import type { ShopifyProductEdge, ShopifyProduct } from "@/types/shopify/page"
 
 export async function getProducts(first: number = 10): Promise<ShopifyProductEdge[]> {
   const query = `
