@@ -86,15 +86,17 @@ export default function SelectedWorks({ products }: SelectedWorksProps) {
       </div>
 
       {/* Dark bar — "Crafted slowly" */}
-      <div className="bg-ink py-6">
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-center gap-6">
-          <span className="w-16 h-px bg-ivory/40" />
-          <p className="text-[11px] uppercase tracking-[0.3em] text-ivory/90">
-            Crafted slowly. Made to last.
-          </p>
-          <span className="w-16 h-px bg-ivory/40" />
-        </div>
-      </div>
+   <div className="border-t border-ink/10">
+  <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
+    <div className="flex items-center justify-center gap-6">
+      <span className="w-16 h-px bg-ink/20" />
+      <p className="text-[10px] uppercase tracking-[0.4em] text-stone">
+        Crafted slowly. Made to last.
+      </p>
+      <span className="w-16 h-px bg-ink/20" />
+    </div>
+  </div>
+</div>
     </section>
   )
 }
