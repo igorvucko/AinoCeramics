@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Cormorant_Garamond, Inter } from "next/font/google"
+import Footer from "@/components/Footer"
 import "./globals.css"
 
 const cormorant = Cormorant_Garamond({
@@ -17,7 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "AINO — Sculptural Ceramics",
+  title: "AINO Studio — Sculptural Ceramics",
   description:
     "Handmade sculptural vases and ceramic objects by academic sculptor Marija Josipović.",
 }
@@ -29,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body className="bg-ivory text-ink antialiased">
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
