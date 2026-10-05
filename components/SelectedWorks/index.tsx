@@ -7,8 +7,8 @@ interface SelectedWorksProps {
 export default function SelectedWorks({ products }: SelectedWorksProps) {
   return (
     <section className="bg-ivory">
-      <div className="max-w-7xl mx-auto px-6 py-24 md:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div className="max-w-7xl mx-auto px-5 md:px-6 py-16 md:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
 
           {/* Left: Title & description */}
           <div className="lg:col-span-4">
@@ -19,12 +19,12 @@ export default function SelectedWorks({ products }: SelectedWorksProps) {
               <span className="w-16 h-px bg-ink/30" />
             </div>
 
-            <h2 className="text-ink text-4xl md:text-5xl font-light leading-[1.1] mb-8">
+            <h2 className="text-ink text-3xl md:text-5xl font-light leading-[1.1] mb-6 md:mb-8">
               Recent pieces from<br />
               the studio
             </h2>
 
-            <p className="text-stone text-base leading-relaxed font-light mb-10 max-w-sm">
+            <p className="text-stone text-base leading-relaxed font-light mb-8 md:mb-10 max-w-sm">
               A collection of unique ceramic objects, each with its own
               character, texture and story.
             </p>
@@ -42,7 +42,7 @@ export default function SelectedWorks({ products }: SelectedWorksProps) {
 
           {/* Right: 3 product images */}
           <div className="lg:col-span-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-6">
               {products.slice(0, 3).map(({ node }: any, index: number) => (
                 <Link
                   key={node.id}
@@ -73,7 +73,7 @@ export default function SelectedWorks({ products }: SelectedWorksProps) {
             </div>
 
             {/* Bottom: arrows */}
-            <div className="flex justify-end mt-10 gap-3">
+            <div className="flex justify-end mt-8 md:mt-10 gap-3">
               <button className="w-10 h-10 border border-ink/20 flex items-center justify-center hover:bg-ink hover:text-ivory transition text-sm">
                 ←
               </button>
@@ -85,18 +85,18 @@ export default function SelectedWorks({ products }: SelectedWorksProps) {
         </div>
       </div>
 
-      {/* Dark bar — "Crafted slowly" */}
-   <div className="border-t border-ink/10">
-  <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-    <div className="flex items-center justify-center gap-6">
-      <span className="w-16 h-px bg-ink/20" />
-      <p className="text-[10px] uppercase tracking-[0.4em] text-stone">
-        Crafted slowly. Made to last.
-      </p>
-      <span className="w-16 h-px bg-ink/20" />
-    </div>
-  </div>
-</div>
+      {/* Crafted slowly separator */}
+      <div className="border-t border-ink/10">
+        <div className="max-w-7xl mx-auto px-5 md:px-6 py-12 md:py-20">
+          <div className="flex items-center justify-center gap-3 md:gap-6">
+            <span className="w-8 md:w-16 h-px bg-ink/20" />
+            <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone text-center whitespace-nowrap">
+              Crafted slowly. Made to last.
+            </p>
+            <span className="w-8 md:w-16 h-px bg-ink/20" />
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
