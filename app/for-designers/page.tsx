@@ -22,6 +22,7 @@ export default function ForDesignersPage() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-ivory/70 via-ivory/20 to-transparent" />
+             <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-ink/40 to-transparent" />
           </div>
 
           {/* Text */}
